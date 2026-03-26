@@ -1,0 +1,115 @@
+# IT Helpdesk Ticketing Lab – Detailed Walkthrough
+
+## Objective
+Simulate real-world IT helpdesk operations by creating and resolving multiple support tickets while documenting troubleshooting steps and outcomes.
+
+---
+
+## Environment
+- Raspberry Pi (Linux)
+- Remote access via SSH
+- Spreadsheet-based ticket tracking system
+
+---
+
+## Scenario
+Multiple users reported issues including network connectivity problems, login failures, and missing software. Each issue was investigated, resolved, and documented as a helpdesk ticket.
+
+---
+
+## Ticket 1 – Network Connectivity Issue (DNS)
+
+## Issue
+User unable to access internet
+
+## Troubleshooting Process
+- Tested connectivity using:
+ping google.com
+→ Failed
+
+- Tested IP connectivity:
+ping 8.8.8.8
+→ Successful
+
+## Analysis
+Network connectivity was functional, but DNS resolution was failing.
+
+## Actions Taken
+- Reviewed DNS configuration
+- Updated DNS server to a valid address
+
+## Resolution
+Internet access restored after correcting DNS settings
+
+---
+
+## Ticket 2 – User Login Issue
+
+## Issue
+User unable to log into system
+
+## Troubleshooting Process
+- Verified user account exists
+- Checked account status
+- Identified account was locked
+
+## Actions Taken
+- Unlocked user account
+- Reset user password
+
+## Resolution
+User successfully logged into system
+
+---
+
+## Ticket 3 – Software Installation Issue
+
+## Issue
+Required application not available on system
+
+## Troubleshooting Process
+- Verified application was not installed using:
+which tree
+
+- Updated package repository:
+sudo apt update
+
+- Installed application:
+sudo apt install tree -y
+
+## Actions Taken
+- Confirmed missing software
+- Updated package lists
+- Installed required package
+
+## Resolution
+Application successfully installed and functional
+
+---
+
+## Ticketing Workflow
+Each issue followed a structured process:
+1. Ticket created based on user report
+2. Issue investigated using appropriate tools
+3. Root cause identified
+4. Solution applied
+5. Ticket updated and closed
+
+---
+
+## Key Skills Demonstrated
+- Troubleshooting and problem isolation
+- DNS and network diagnostics
+- User account management
+- Software installation using package manager
+- Ticket documentation and workflow tracking
+
+---
+
+## Outcome
+Successfully simulated a helpdesk environment by resolving multiple technical issues and documenting each step in a structured ticketing system.
+
+---
+
+## Key Insight
+Effective troubleshooting requires isolating variables and validating each step before applying a solution.
